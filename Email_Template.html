@@ -114,7 +114,7 @@
                                                                <td class="paddingcomp" style="border:0px;padding:0px;line-height:19pt;border-top:0px none #ffffff;   border-bottom:0px none #ffffff;">
                                                                   <!-- START HEADER -->
                                                                   <div>
-                                                                     <h1 style="color: #34363C; font-size: 24pt; font-family: Lato, sans-serif; font-weight: 400; line-height:1em;padding:20px 25px 10px;text-align: center;" color="white"><!--{{POSTTITLE}}-->March 15th — Lorem ipsum dolor sit amet</h1>
+                                                                     <h1 style="color: #34363C; font-size: 24pt; font-family: Lato, sans-serif; font-weight: 400; line-height:1em;padding:20px 25px 10px;text-align: center;">{{POSTTITLE}}</h1>
                                                                   </div>
                                                                   <!-- END HEADER -->
                                                                </td>
@@ -137,8 +137,8 @@
                                                                            <tr>
                                                                               <td class="bannerimgpad" style="border:0px;padding:0px;text-align:center;padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;">
                                                                                  <!--FULL-SCREEN FEATURED IMAGE-->
-                                                                                 <!-- <a href="{{POSTLINK-ONLY}}"><img align="left" class="zpImage" height="auto" hspace="0" size="B" alt="Featured_Image" style="width:600px;height:autopx;max-width:600px !important;border:0px;text-align:left;" vspace="0" width="600px" src="{{POSTIMAGE-URL}}"></a> -->
-                                                                                 <a href="{{POSTLINK-ONLY}}"><img align="left" class="zpImage" height="auto" hspace="0" size="B" alt="Featured_Image" style="padding: 10px 25px; width:550px;height:autopx;max-width:550px !important;border:0px;text-align:left;" vspace="0" width="550px" src="https://hiswordatwork.com/wp-content/uploads/2022/01/Are-You-Listening-1.jpg"></a>
+                                                                                 <a href="{{POSTLINK-ONLY}}"><img align="left" class="zpImage" height="auto" hspace="0" size="B" alt="Featured_Image" style="padding: 10px 25px; padding-left: 25px; padding-right: 25px; width:550px;height:autopx;max-width:550px !important;border:0px;text-align:left;" vspace="0" width="550px" src="{{POSTIMAGE-URL}}"></a>
+                                                                            <!-- <a href="{{POSTLINK-ONLY}}"><img align="left" class="zpImage" height="auto" hspace="0" size="B" alt="Featured_Image" style="padding: 10px 25px; padding-left: 25px; padding-right: 25px; width:550px;height:autopx;max-width:550px !important;border:0px;text-align:left;" vspace="0" width="550px" src="https://hiswordatwork.com/wp-content/uploads/2022/01/Are-You-Listening-1.jpg"></a> -->
                                                                               </td>
                                                                            </tr>
                                                                         </tbody>
@@ -161,11 +161,11 @@
                                                                   <div style="font-size:16px; font-family: Arial, Helvetica; color:#34363C;">
 
                                                                     <!--ADD CONTENT HERE-->
-                                                                     <!-- <p style="font-size:16px">{{POSTEXCERPT}}</p> -->
-                                                                     <a href="{{POSTLINK-ONLY}}" style="font-size: 16px; color: #00587c; text-align: center; display: block;">Click Image to Play Video</a>
-                                                                     <h2 style="font-size: 20px; color: #34363C; font-weight: 400;">Hello {{NAME | fallback:'there'}},</h2>
-                                                                     <p style="font-size:16px">Here is your daily devotionial from His Word at Work:</p>
-                                                                     <p style="font-size:16px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                                                    <a href="{{POSTLINK-ONLY}}" style="font-size: 16px; color: #00587c; text-align: center; display: block;">Click Image to Play Video</a>
+                                                                    <h2 style="font-size: 20px; color: #34363C; font-weight: 500;">Hello {{FIRSTNAME | fallback:'there'}},</h2>
+                                                                    <p style="font-size:16px">Here is your daily devotionial from His Word at Work:</p>
+                                                                    <!-- <p style="font-size:16px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> -->
+                                                                    <p style="font-size:16px">{{POSTEXCERPT}}</p>
                                                                      <div style="padding: 25px 0px;"><a href="{{POSTLINK-ONLY}}" style="text-transform:uppercase; text-decoration: none; background-color: #00587c; box-shadow: 3px 3px 10px #00000034; border-radius: 5px; padding: 15px; color: white; font-size: 14px;">Read More...</a></div>
                                                                      <!--ADD CONTENT HERE-->
 
@@ -199,9 +199,8 @@
                                                       <tbody>
                                                          <tr>
                                                             <td align="center" style="padding:10px 25px;word-break:break-word;" >
-                                                               <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:12px;line-height:1em;text-align:center;color:#707070;padding: 0px 30px;" >
-                                                                  <p>This email was sent by His Word at Work to {{EMAIL}} because you subscribed to our <a style="color: #a4bcc2; text-decoration: none;" href="https://hiswordatwork.com/">daily devotionals</a>.</p>
-                                                                  <p style="color: #707070;">If you wish to unsubscribe, click <a style="color: #a4bcc2; text-decoration: none;" data-gjs-type="link" href="{{UNSUBSCRIBE-LINK}}">here </a></p>
+                                                               <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:12px;line-height:1.4em;text-align:center;color:#707070;padding: 0px 30px;" >
+                                                                  <p>This email was sent by His Word at Work to {{EMAIL}} because you subscribed to our <a style="color: #a4bcc2; text-decoration: none;" href="https://hiswordatwork.com/">daily devotionals</a>. If you wish to unsubscribe, click <a style="color: #a4bcc2; text-decoration: none;" data-gjs-type="link" href="{{UNSUBSCRIBE-LINK}}">here</a>.</p>
                                                                   <a href="https://hiswordatwork.com/"><img src="https://hiswordatwork.com/wp-content/uploads/2021/02/cropped-Dark-logo-witrh-text.png" alt="His_Word_at_Work_Logo" style="opacity: 0.95;" width="175px"></a>
                                                                   <p style="color:#acacac">His Word at Work | <em>A Ministry of FCCI</em></p>
                                                                </div>
